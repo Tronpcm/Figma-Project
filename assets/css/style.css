@@ -410,3 +410,88 @@ a {
 }
 
 /* ================================================ feedback ================================================ */
+.feedback {
+  margin-top: 120px;
+  background-color: #2e2100;
+  padding: 120px 0;
+}
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: all ease 0.5;
+}
+
+/*------------------- feedback lelt -------------------*/
+
+.feedback-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  height: 190px;
+}
+
+.feedback-left .feedback-img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.feedback-left .name {
+  font-size: 1.9rem;
+  line-height: 1.6;
+  font-weight: 600;
+  padding: 8px 0 5px;
+  color: white;
+}
+
+.feedback-left .desc {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 300;
+  color: white;
+}
+
+.feedback-left .nut-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.feedback-left .nut {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  margin: 0 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.feedback-left .nut.active {
+  background-color: #ffb900;
+  cursor: default;
+}
+
+/*------------------- feedback right -------------------*/
+
+.feedback-right {
+  width: 770px;
+  margin-left: 200px;
+}
+
+.feedback-right .desc {
+  font-style: italic;
+  font-size: 2.2rem;
+  line-height: 2;
+  color: white;
+  padding-left: 22px;
+}
